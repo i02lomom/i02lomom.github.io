@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Miguel Angel López Moyano</title>
+</head>
+<body>
+	<header>
+		<p id="titulo">GESTOR DE TAREAS</p>
+	</header>
+	<div id="contenido">
+		<aside>
+			<section>
+				<header>
+					<p>Menú</p>
+				</header>
+				<ul>
+					<li class="inbox"><a href="anadirTarea.html"><img src="img/anadir.png"> Añadir Tarea</a></li>
+					<li class="inbox"><a href="#"><img src="img/inbox.png"> Tareas</a></li>
+					<li class="inbox"><a href="#"><img src="img/calendar.png"> Hoy</a></li>
+					<li class="inbox"><a href="#"><img src="img/calendar2.png"> Próximos 7 días</a></li>
+					<li>
+						<span class="option">Asignaturas</span>
+						<ul class="asignatura">
+							<li><a href="#">DWCL</a></li>
+							<li><a href="#">DWES</a></li>
+							<li><a href="#">DAW</a></li>
+							<li><a href="#">DIW</a></li>
+							<li><a href="#">HLC</a></li>
+							<li><a href="#">Empresas</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</section>
+		</aside>
+		<main>
+			<section>
+				<article>
+					<header>
+						<p id="tarea">Tarea 1</p>
+					</header>
+					<body>
+						<h3>DWES</h3>
+						<p>Trabajo de clase. Sesiones</p>
+						<p>1. Crear una aplicación para gestionar una agenda de contactos. </p>
+
+						<p>2. Crear una pequeña aplicación que permita la gestión académica del módulo de DWES. Interesa almacenar las notas de cada trimestre y mostrar un informe con la nota media.</p>
+
+						<p>3. Buscaminas.</p>
+					</body>
+				</article>
+				<div id="botonera">
+					<a href="#"><button id="editar"></button></a>
+					<a href="#"><button id="borrar"></button></a>
+				</div>
+			</section>
+			<section>
+				<article>
+					<header>
+						<p id="tarea">Tarea 2</p>
+					</header>
+					<h3>DWECL</h3>
+					<p>Guardando login en una cookie</p>
+
+					<p>Crea una página debidamente diseñada que solicite el nombre del usuario y la contraseña. Si existiera alguna cookie almacenada, mostraría sus datos.
+					Dispondrá además de los siguientes botones:</p>
+
+					<p>Botón limpiar para borrar los datos (también borrará la cookie)</p>
+					<p>Botón entrar para entrar en el sitio. </p>
+					<p>Al activar entrar validará los datos. </p>
+
+					<p>El nombre del usuario ha de tener un mínimo de 5 caracteres, puede contener números o letras ( mayúsculas o minúsculas), guiones o subrayados
+					La contraseña ha de ser lo suficientemente robusta. Tendrá un mínimo de 6 caracteres y ha de tener al menos un dígito, una letra y un carácter especial ($%@#)
+					En el caso en que el nombre del usario o la contraseña no sean válidos, devolverá el foco a la caja de texto en cuestión con un mensaje de error en la propia caja. Si todo va bien, abre una nueva ventana con los datos leídos desde la cookie. </p>
+				</article>
+				<div id="botonera">
+					<a href="#"><button id="editar"></button></a>
+					<a href="#"><button id="borrar"></button></a>
+				</div>
+			</section>
+			<section>
+				<article>
+					<header>
+						<p id="tarea">Tarea 3</p>
+					</header>
+					<h3>DIW</h3>
+					<p>Descripción: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+				</article>
+				<div id="botonera">
+					<a href="#"><button id="editar"></button></a>
+					<a href="#"><button id="borrar"></button></a>
+				</div>
+			</section>
+			<section>
+				<article>
+					<header>
+						<p id="tarea">Tarea 4</p>
+					</header>
+					<h3>DAW</h3>
+					<p>Práctica 8: Información sobre nuestro servidor Web</p>
+					<p>Monitoriza tu servidor web Apache: mod_info.
+					  4.1. Comprueba si el módulo mod_info está activo y en caso negativo actívalo; configura el fichero httpd.conf o apache2.conf  de forma adecuada para poder usar el módulo y mostrar información sobre tu servidor web. 
+					          Nota: en distribuciones como Ubuntu este paso ni siquiera es necesario.
+					  4.2. Describe el contenido del fichero info.conf
+					  4.3. Restringe el acceso a esta información: sólo debes permitir que sea visible para el local host y una máquina      cliente concreta (usa la autenticación realizada en prácticas anteriores).
+					  4.4. Accede desde el navegador del cliente autorizado al servidor web de forma que se muestre la información.
+					  4.5. Muestra sólo información del servidor: 
+					      Usa http://[nombre_server]/[SetHandler]?server
+					Ej: http://localhost/server-info?server
+					4.6. Muestra sólo información de un determinado módulo: 
+					Usa http://[nombre_server]/[SetHandler]?[nombredelmódulo]
+					Ej: http://localhost/server-info?mod_cgi.c
+
+					5. Monitoriza tu servidor web (el que tu quieras): mod_status.
+					5.1. Comprueba si el módulo mod_status está activo y en caso negativo actívalo; configura el fichero httpd.conf de forma adecuada para mostrar dicha información sobre tu servidor web. 
+					5.2. Describe el fichero status.conf
+					5.3. Restringe el acceso a esta información: sólo debes permitir que sea visible para el usuario administrador de tu servidor web (usa la autenticación realizada en prácticas anteriores).
+					5.4. Accede desde el navegador con el usuario autorizado al servidor web de forma que se muestre la información.
+
+					6.   Sube a moodle las capturas y respuestas a las preguntas.</p>
+				</article>
+				<div id="botonera">
+					<a href="#"><button id="editar"></button></a>
+					<a href="#"><button id="borrar"></button></a>
+				</div>
+			</section>
+		</main>
+	</div>
+	<footer>
+		<h1>Realizado por Miguel Angel López Moyano</h1>
+	</footer>
+</body>
+</html>

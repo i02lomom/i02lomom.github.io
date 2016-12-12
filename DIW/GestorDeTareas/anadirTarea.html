@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/formulario.css">
+	<title>Miguel Angel López Moyano</title>
+</head>
+<body>
+	<main>
+		<header>
+			<p id="titulo">GESTOR DE TAREAS</p>
+		</header>
+		<form action="index.html" method="post" name="formulario">
+			<p><label>Tarea: </label>
+			<input type="text" name="tarea" placeholder="Tarea" required/></p>
+			<p><label>Asignatura: </label>
+			<select name="asignatura">
+				<option value="DWCL" selected="selected">DWCL</option>
+				<option value="DWES">DWES</option>
+				<option value="HLC">HLC</option>
+				<option value="DAW">DAW</option>
+				<option value="DIW">DIW</option>	
+			</select></p>
+			<p><label>Fecha: </label>
+			<input type="date" name="fecha" required/>
+			</p>
+        	<p><label>Descripción: </label>
+    		<textarea name="descripcion" cols="30" rows="8" placeholder="Descripción" required></textarea></p>
+    		<p><button type="submit">Enviar</button></p>
+		</form>
+	</main>
+	<footer>
+		<h1>Realizado por Miguel Angel López Moyano</h1>
+	</footer>
+</body>
+</html>
