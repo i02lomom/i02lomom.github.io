@@ -1,0 +1,415 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#index {
+	background: url("../img/fondoInicio.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+#bienvenido {
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+#tituloIndex, #subtituloIndex {
+	color: #FFFFFF;
+	font-family: 'Yellowtail', cursive;
+	text-align: center;
+	text-shadow: 0px 2px 0px #CDAA7D;
+}
+
+#tituloIndex {
+	font-size: 4em;
+}
+
+#subtituloIndex {
+	font-size: 2em;
+}
+
+#entrar {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 2em;
+	position: relative;
+	visibility: hidden;
+	animation-name: botonInicio;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards; /* Para que el botón se quede visible */
+}
+
+#entrar a {
+	background: #FFF;
+	font-family: 'Roboto', sans-serif;
+	border: 2px solid #FFFFFF;
+	border-radius: 15px;
+	color: #CDAA7D;
+	padding: 5px 60px;
+	text-decoration: none;
+}
+
+#entrar a:hover {
+	background-color: transparent;
+	color: #FFF;
+}
+
+@keyframes botonInicio {
+	0%{
+		opacity: 0;
+	}
+
+	25%{
+		visibility: visible;
+		opacity: 0.25;
+	}
+
+	50%{
+		opacity: 0.50;
+	}
+
+	75%{
+		opacity: 0.75;
+	}
+
+	100%{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.toggle-mnu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+}
+.toggle-mnu span:after, .toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.toggle-mnu span:after {
+  top: 18px;
+}
+.toggle-mnu span {
+  position: relative;
+  display: block;
+}
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+.toggle-mnu.on span {
+  background-color: transparent;
+}
+.toggle-mnu.on span:before {
+  transform: rotate(45deg) translate(-1px, 0px);
+}
+.toggle-mnu.on span:after {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
+
+body {
+	background: url("../img/fondoInicio.jpg") no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+}
+
+header h1 {
+	font-size: 3em;
+	color: #FFFFFF;
+	text-shadow: 0px 2px 0px #CDAA7D;
+	font-family: 'Yellowtail', cursive;
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+	background: #937B62;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	padding: 0.8em;
+}
+
+nav ul li a {
+	color: #D9C7A2;
+	text-decoration: none;
+}
+
+
+nav ul li a:hover {
+	color: #CDAA7D;
+}
+
+#busqueda {
+	display: none;
+}
+
+#barraBusquedaPequena {
+	margin-left: 3em;
+	margin-bottom: 1.5em;
+}
+
+#barraBusquedaPequena input[type=text] {
+	border: 1px solid #8B7355;
+	border-radius: 15px;
+	display: inline-block;
+	padding: 0.2em;
+	text-align: center;
+	width: 80%;
+}
+
+main {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background: #E6DBC3;
+	width: 100%;
+}
+
+section{
+	padding-top: 1em;
+	text-align: center;
+}
+
+article {
+	background: #FEFEFC;
+	display: inline-block;
+	box-shadow: 4px 4px 4px #BEBEBE;
+	margin: 0.6em;
+	margin-top: 1em;
+	padding: 1.5em;
+}
+
+article:hover {
+	box-shadow: 0px 0px 6px #BEBEBE;
+}
+
+.imgCasa img {
+	width: 280px;
+	height: 220px;
+}
+
+.datosCasa {
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+.datosCasa span {
+	display: block;
+	margin: 0.4em;
+}
+
+#botonera{
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	text-align: center;
+	margin-top: 1em;
+	padding: 2px;
+}
+
+.action-button {
+	background: #CDAA7D;
+	border-bottom: 5px solid #8B7355;
+	border-radius: 10px;
+	color: #FFFFFF;
+	padding: 0.5em;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.6s;
+}
+
+.action-button:hover {
+	background: #8B7355;
+	border-bottom: 5px solid #CDAA7D;
+}
+
+footer {
+	font-size: 0.8em;
+	text-align: center;
+	width: 100%;
+}
+
+footer h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	color: #FFFFFF;
+}
+
+#imagenCasa {
+	display: inline-block;
+}
+
+#mapaCasa {
+	display: inline-block;
+}
+
+#mapaCasa iframe{
+	width: 280px;
+	height: 220px;
+}
+
+#imagenCasa img, #mapaCasa img{
+	width: 280px;
+	height: 220px;
+}
+
+#mainFormulario h1{
+	color: #8B7355;
+	text-align: center;
+}
+
+#mainFormulario label{
+	color: #8B7355;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.1em;
+}
+
+#mainFormulario p{
+	text-align: center;
+	padding: 10px;
+}
+
+#mainFormulario input[type=text], #mainFormulario input[type=date], 
+#mainFormulario input[type=number]{
+	border-radius: 15px;
+	height: 25px;
+}
+
+#mainFormulario input[type=submit] {
+	color: #FFF;
+	background: rgba(205,170,125,0.6);
+	margin: 0.67em 0;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#botonEnviar{
+	padding-top: 25px;
+	text-align: center;
+}
+
+#mainFormulario input:required:valid { 
+	background: #C5E1A5;
+}
+
+#mainFormulario input:focus:invalid {
+	background: #ff9999;
+}
+
+#footerFormulario h2{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	color: #FFFFFF;
+}
+
+@media (min-width: 716px) {
+	.toggle-mnu {
+  		display: none;
+  	}
+
+  	nav{
+  		visibility: visible;
+  		display: block;
+  	}
+
+  	#busqueda {
+		display: inline-block;
+		width: 100%;
+	}
+
+	#barraBusqueda{
+		background: rgba(0,0,0,0.3);
+		border-radius: 10px;
+		margin-left: 3em;
+		padding: 1em;
+		text-align: center;
+		width: 85%;
+	}
+
+	#barraBusqueda input[type=text] , input[type=number]{
+		height: 28px;
+	}
+
+	#barraBusqueda input[type=submit] {
+		background: rgba(205,170,125,0.6);
+		color: #FFF;
+		padding: 5px 60px;
+		transition: all 0.8s;
+	}
+
+	#barraBusquedaPequena {
+		display: none;
+	}
+
+	footer {
+		font-size: 1em;
+	}
+
+	#imagenCasa img {
+		width: 380px;
+		height: 320px;
+	}
+
+	#mapaCasa iframe{
+		width: 380px;
+		height: 320px;
+	}
+}
+
+@media (min-width: 1067px) {
+	article {
+		margin-left: 4.5em;
+	}
+
+	#articleInfo{
+		margin-left: 0.6em;
+	}
+
+	.imgCasa img {
+		width: 380px;
+		height: 320px;
+	}
+
+	#imagenCasa img {
+		width: 480px;
+		height: 420px;
+	}
+
+	#mapaCasa iframe{
+		width: 480px;
+		height: 420px;
+	}
+
+	#datosCasa{
+		margin: 0 auto;
+    	width: 70%;
+	}
+
+}
+
+
+
+
+
+
+

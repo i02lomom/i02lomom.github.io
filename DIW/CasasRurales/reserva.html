@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Practica 12 Miguel Ángel López Moyano"/>
+	<meta name="author" content="Miguel Ángel López Moyano"/>
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no">
+	<title>Miguel Ángel López Moyano</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+</head>
+<body>
+	<div id="contenido">
+		<header>
+			<h1>Casas Rurales</h1>
+		</header>
+
+		<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="home.html">Casas Rurales</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+
+		<main id="mainFormulario">
+			<h1>Formulario de reserva</h1>
+
+			<form action="index.html" method="post" name="formulario">
+			<p><label>Nombre </label>
+			<input type="text" name="nombre" required/></p>
+			<p><label>Apellidos </label>
+			<input type="text" name="apellidos" required/></p>
+			<p><label>Correo </label>
+			<input type="text" name="correo" required/></p>
+			<p><label>Teléfono </label>
+			<input type="text" name="telefono" required/></p>
+			<p><label>Fecha de entrada </label>
+			<input type="date" name="entrada" required/></p>
+			<p><label>Fecha de salida </label>
+			<input type="date" name="salida" required/></p>
+			<p><label>Personas </label>
+			<input type="number" name="personas" required/></p>
+			<div id="botonEnviar">
+				<input type="submit" name="enviar">
+			</div>
+			</form>
+		</main>
+
+		<footer id="footerFormulario">
+			<h2>Realizado por Miguel Angel López Moyano</h2>
+		</footer>
+</body>
+</html>
